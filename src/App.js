@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { PageTransition } from "@steveeeie/react-page-transition";
+import FirstPage from "./page/FirstPage";
+import SecondPage from "./page/SecondPage";
+import ThirdPage from "./page/ThirdPage";
+import FourthPage from "./page/FourthPage";
+import FifthPage from "./page/FifthPage";
+import SixthPage from "./page/SixthPage";
+import "./style.css"
+
+const Links = () => (
+  <>
+    <div className="nav">
+      <Link className="menu" to="/">&#9734;</Link>
+      <Link className="menu" to="/greatResignation">&#9734;</Link>
+      <Link className="menu" to="/leader">&#9734;</Link>
+      <Link className="menu" to="/bestEmployers">&#9734;</Link>
+      <Link className="menu" to="/bestEmployersCountry">&#9734;</Link>
+      <Link className="menu" to="/bestEmployersField">&#9734;</Link>
+    </div>
+  </>
+);
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.StrictMode>
+      <BrowserRouter>
+        <Links />
+        <Route
+          render={({ location }) => {
+            return (
+              <PageTransition
+                preset="flipLeft"
+                transitionKey={location.pathname}
+              >
+                <Switch location={location}>
+                  <Route exact path="/" component={FirstPage} />
+                  <Route exact path="/greatResignation" component={SecondPage} />
+                  <Route exact path="/leader" component={ThirdPage} />
+                  <Route exact path="/bestEmployers" component={FourthPage} />
+                  <Route exact path="/bestEmployersCountry" component={FifthPage} />
+                  <Route exact path="/bestEmployersField" component={SixthPage} />
+                </Switch>
+              </PageTransition>
+            );
+          }}
+        />
+      </BrowserRouter>
+    </React.StrictMode>
   );
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById("root"));
+
+
+export default App

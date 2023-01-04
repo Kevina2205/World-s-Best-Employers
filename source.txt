@@ -1,0 +1,12 @@
+source data:
+- World’s Best Employers TOP 100, https://www.kaggle.com/datasets/devrimtuner/worlds-best-employers-top-100 
+
+source:
+- Elisabeth Brier, 2022, Meet The World’s Best Employers 2022, https://www.forbes.com/sites/elisabethbrier/2022/10/11/meet-the-worlds-best-employers-2022/?sh=36c1153cc086 
+- THESTREET STAFF, 2022, What Is the Great Resignation? Definition, Causes & Impact, https://www.thestreet.com/dictionary/g/great-resignation-big-quit-great-reshuffle
+- Jeanne Sahadi, 2019, We asked CNN Business readers what makes a great boss. Here’s what you said, https://edition.cnn.com/2019/03/26/success/how-to-be-a-great-boss/index.html 
+- Ashley Stahl, 5 Industries Experiencing Double-Digit Growth Over The Next Decade, https://www.forbes.com/sites/ashleystahl/2022/04/08/5-industries-experiencing-double-digit-growth-over-the-next-decade/?sh=b70baeb13ecf
+- CNBC Teams, 2019, These 5 hot industries are a safe bet for a career that’s future-proof, https://www.cnbc.com/2019/01/02/5-hot-industries-to-future-proof-your-career.html 
+
+
+Copyright Kevina Eleeas 2023
